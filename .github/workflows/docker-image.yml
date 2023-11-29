@@ -12,6 +12,6 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t i190484@nu.edu.pk/python_auth_4 .
+          docker build -t hamza04/python_auth_4 .
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push i190484@nu.edu.pk/python_auth_4
+          docker push hamza04/python_auth_4
